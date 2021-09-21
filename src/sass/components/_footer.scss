@@ -1,0 +1,18 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-background-color;
+
+    .footer__box {
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+    }
+  }
+
+  .address-social-container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+    }
+}

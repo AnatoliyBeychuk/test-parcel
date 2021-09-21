@@ -1,0 +1,65 @@
+.address-box {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: $tablet - 1px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address {
+    width: 231px;
+    margin-top: 20px;
+  }
+}
+
+.address-list__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  font-style: normal;
+
+  @media screen and (max-width: $desktop - 1px) {
+    text-align: center;
+  }
+
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  .address-list__our {
+    color: $accent-text-color-white;
+  }
+
+  .address-list__mail {
+    color: $link-text-color;
+    transition: color 250ms $transition-cubic;
+  }
+
+  .address-list__tel {
+    color: $link-text-color;
+    transition: color 250ms $transition-cubic;
+  }
+}
+
+.address-list__mail {
+  &:hover,
+  &:focus {
+    color: $accent-text-color-blue;
+  }
+}
+
+.address-list__tel {
+  &:hover,
+  &:focus {
+    color: $accent-text-color-blue;
+  }
+}

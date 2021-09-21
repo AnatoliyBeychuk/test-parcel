@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+$primary-title-color: #212121;
+$primary-text-color: #757575;
+$primary-background-color: #ffffff;
+$accent-text-color-white: #ffffff;
+$accent-text-color-blue: #2196f3;
+$accent-background-color: #2196f3;
+$link-text-color: rgba(255, 255, 255, 0.6);
+$logo-color: #000000;
+$accent-logo-color: #2196f3;
+$hero-background-color: #2f303a;
+$footer-background-color: #2f303a;
+$button-no-active-background: #f5f4fa;
+$border-color-gray: #eeeeee;
+$border-color-header: #ececec;
+$social-color-no-active: #afb1b8;
+$footer-social-background: rgba(255, 255, 255, 0.1);
+$we-doing-item-title-background: rgba(47, 48, 58, 0.8);
+$project-description-background: rgba(33, 150, 243, 0.9);
+$transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$backdrop-background: rgba(0, 0, 0, 0.2);
+
+//Точки перелома
+$mobile: 480px; //480 -767 - mobile
+$tablet: 768px; //768 -1199 - tablet
+$desktop: 1200px; // 1200 - ... - desktop

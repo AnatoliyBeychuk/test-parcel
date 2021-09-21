@@ -1,0 +1,92 @@
+.social-box {
+    @media screen and (min-width: $desktop) {
+        padding-top: 12px;
+        margin-left: 70px;
+    }
+
+    @media screen and (max-width: $tablet - 1px) {
+        align-items: center;
+    }
+
+    .social-box__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: left;
+        text-transform: uppercase;
+        color: $accent-text-color-white;
+        
+        @media screen and (max-width: $desktop - 1px) {
+            text-align: center;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social--footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.social__item {
+    .social__link {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        border-radius: 50%;
+        color: $social-color-no-active;
+        transition: color 250ms $transition-cubic,
+            background-color 250ms $transition-cubic;
+    }
+    
+    .social__link--footer {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        border-radius: 50%;
+        color: $accent-text-color-white;
+        background-color: $footer-social-background;
+        transition: color 250ms $transition-cubic,
+        background-color 250ms $transition-cubic;
+    }
+    
+    .social__icon {
+        fill: currentColor;
+    }
+
+    &:not(:first-child) {
+        margin-left: 10px;
+      }
+}
+
+.social__link {
+    &:hover,
+    &:focus {
+        background-color: $accent-background-color;
+        color: $accent-text-color-white;
+    }
+}
+
+.social__link--footer {
+    &:hover,
+    &:focus {
+        background-color: $accent-background-color;
+        color: $accent-text-color-white;
+    }
+}

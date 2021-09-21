@@ -1,0 +1,10 @@
+.section-header {
+    border: 1px solid $border-color-header;
+}
+
+@media screen  and (min-width: $tablet) {
+    .container--header {
+        display: flex;
+        align-items: center;
+    }
+}

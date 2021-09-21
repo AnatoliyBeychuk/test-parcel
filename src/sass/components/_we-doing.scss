@@ -1,0 +1,63 @@
+.we-doing {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: $desktop - 1px) {
+    display: none;
+  }
+
+  .we-doing__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $primary-title-color;
+  }
+
+  .we-doing-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+.we-doing-list {
+  .we-doing-list__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.we-doing-list__item {
+  .we-doing-card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.we-doing-card {
+  .we-doing-card__image {
+    display: block;
+  }
+
+  .we-doing-card__name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent-text-color-white;
+    background-color: $we-doing-item-title-background;
+  }
+}

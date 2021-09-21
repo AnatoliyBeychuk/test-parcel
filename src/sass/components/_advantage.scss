@@ -1,0 +1,76 @@
+.advantage {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.advantage-list {
+  margin-left: -30px;
+  margin-bottom: -30px;
+
+  .advantage-list__item {
+    flex-basis: calc(100% / 1 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .advantage-list__item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .advantage-list__item {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .advantage-list__background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: $button-no-active-background;
+  }
+
+  .advantage-list__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase; /* Заглавные буквы */
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $primary-title-color;
+
+    @media screen and (max-width: $tablet - 1px) {
+      text-align: center;
+    }
+  }
+
+  .advantage-list__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $primary-text-color;
+  }
+}

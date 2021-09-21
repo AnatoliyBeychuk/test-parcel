@@ -2,7 +2,7 @@
   "name": "test-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.html",
+  "main": "./src/index.js",
   "homepage": "https://anatoliyBeychuk/github.com/test-parcel",
   "scripts": {
     "dev": "parcel src/*.html",
